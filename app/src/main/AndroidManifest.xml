@@ -9,6 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CoffeeMeetsBagel">
+        <activity android:name=".AddLocation"></activity>
+        <activity android:name=".BirthdayDate" />
+        <activity android:name=".SelectGender" />
+        <activity android:name=".SettlePeriod" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
