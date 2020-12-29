@@ -46,7 +46,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tvSettle" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/nextBtn"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="50dp"
