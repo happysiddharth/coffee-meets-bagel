@@ -7,22 +7,22 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class IntroStep1 extends AppCompatActivity {
-    private Button step2Btn;
+public class IntroPage2 extends AppCompatActivity {
+    private Button toStep3Btn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_intro_step1);
+        setContentView(R.layout.activity_intro_page2);
         init();
-        step2Btn.setOnClickListener(new View.OnClickListener() {
+        toStep3Btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent step2Intent = new Intent(getApplicationContext(),IntroPage2.class);
-                startActivity(step2Intent);
+                Intent toStep3Inent = new Intent(getApplicationContext(),IntoPage3Final.class);
+                startActivity(toStep3Inent);
             }
         });
     }
     private void init(){
-        step2Btn = findViewById(R.id.toStep3Btn);
+        toStep3Btn = findViewById(R.id.toStep3Btn);
     }
 }

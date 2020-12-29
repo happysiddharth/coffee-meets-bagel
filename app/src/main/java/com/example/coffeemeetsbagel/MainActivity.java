@@ -22,7 +22,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(viewTermNCondition);
             }
         });
+        fb_login_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent fbLoginIntent = new Intent(getApplicationContext(),IntroStep1.class);
+                startActivity(fbLoginIntent);
+            }
+        });
     }
+
     private void init(){
         fb_login_btn = findViewById(R.id.fb_login_btn);
         termnConditionBtn = findViewById(R.id.termnConditionBtn);
