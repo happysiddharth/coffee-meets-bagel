@@ -48,7 +48,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="By continuing you agree to our"
+        android:text="@string/by_continuing_you_agree_to_our"
         android:textColor="#92A3E8"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
