@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Coffee Meets Bagel</string>
+    <string name="continue_with_facebook">Continue with Facebook</string>
+    <string name="continue_with_phone_number">Continue with phone number</string>
+    <string name="terms_of_service_and_privacy_policy">Terms of Service and Privacy Policy</string>
 </resources>
