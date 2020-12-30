@@ -51,5 +51,6 @@
     <string name="which_gender_do_you_identify_as">Which gender do you identify as?</string>
     <string name="i_m_a_women">I\'m a women</string>
     <string name="i_m_a_man">I\'m a man</string>
+    <string name="add_my_location">Add my location</string>
 
 </resources>
