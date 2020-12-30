@@ -17,5 +17,6 @@
     <color name="blacklight">#4d4d4d</color>
     <color name="verylight">#e0dfe4</color>
     <color name="tinygrey">#f0f0f2</color>
-
+    <color name="verLightblu">#D6EAF8</color>
+    <color name="veryLightRed">#FADBD8 </color>
 </resources>
