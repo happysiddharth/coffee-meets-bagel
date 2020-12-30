@@ -27,7 +27,6 @@ public class SettlePeriod extends AppCompatActivity {
 
         init();
 
-        Log.d("Tags",String.valueOf(imreadynow.getId()));
         imreadynow.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -83,7 +82,6 @@ public class SettlePeriod extends AppCompatActivity {
             this.currentActiveRadioButton = currentRadioButtonId;
             this.previousActiveRadioButton = currentRadioButtonId;
             nextBtn.setBackground(getDrawable(R.drawable.next_btn_enable));
-            nextBtn.setTextColor(R.color.white);
         }
 
     }
