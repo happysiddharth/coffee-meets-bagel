@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         fb_login_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent fbLoginIntent = new Intent(getApplicationContext(),IntroStep1.class);
+                Intent fbLoginIntent = new Intent(getApplicationContext(),SignInForRewards.class);
                 startActivity(fbLoginIntent);
             }
         });

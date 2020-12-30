@@ -67,8 +67,8 @@
     </LinearLayout>
 
     <ScrollView
-        android:layout_width="295dp"
-        android:layout_height="625dp"
+        android:layout_width="316dp"
+        android:layout_height="640dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
