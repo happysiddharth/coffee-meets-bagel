@@ -87,6 +87,7 @@ public class whatareYouLookingFor extends AppCompatActivity {
             this.currentActiveRadioButton = currentRadioButtonId;
             this.previousActiveRadioButton = currentRadioButtonId;
             nextBtn.setBackground(getDrawable(R.drawable.next_btn_enable));
+            nextBtn.setTextColor(getResources().getColor(R.color.white));
         }
 
     }

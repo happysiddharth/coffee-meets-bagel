@@ -22,6 +22,8 @@ public class BirthdayDate extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_birthday_date);
         init();
+        nextBtn.setTextColor(getResources().getColor(R.color.white));
+
         calendar.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
             public void onSelectedDayChange(@NonNull CalendarView view, int year, int month, int dayOfMonth) {

@@ -47,12 +47,18 @@ public class EnterPhoneNoToSignup extends AppCompatActivity {
                     getStartedBtn.setBackground(getDrawable(R.drawable.next_btn_enable));
                     getStartedBtn.setTextColor(getResources().getColor(R.color.white));
                     Log.d("Tags",String.valueOf(s.toString().length()));
-                    getStartedBtn.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View view) {
-                            startActivity(otpPage);
-                        }
-                    });
+                    String onlyNumberRegex = "^[0-9]*$";
+                    if (s.toString().matches(onlyNumberRegex)){
+                        getStartedBtn.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                startActivity(otpPage);
+                            }
+                        });
+                    }else{
+                        phoneNumber.setError("Type not accepted");
+                    }
+
                 }
             }
 

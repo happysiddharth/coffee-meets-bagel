@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".uploadPhotoToIntroduce">
+
+    <ImageView
+        android:id="@+id/prevoiusBtn"
+        android:layout_width="91dp"
+        android:layout_height="23dp"
+        android:layout_marginLeft="@dimen/dp_25"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="308dp"
+        android:layout_marginRight="308dp"
+        android:src="@drawable/ic_backblue_"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TVUpload1"
+        android:layout_width="324dp"
+        android:layout_height="96dp"
+
+        android:layout_marginTop="4dp"
+        android:text="@string/upload_text"
+        android:textColor="@color/blacklight"
+        android:textSize="@dimen/sp_25"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline10" />
+
+    <TextView
+        android:id="@+id/TvUpload2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_100"
+        android:layout_margin="@dimen/dp_35"
+        android:background="@drawable/rectangle"
+        android:backgroundTint="@color/verLightblu"
+        android:paddingLeft="@dimen/dp_70"
+        android:paddingTop="@dimen/dp_25"
+        android:text="@string/upload_text2"
+        android:textColor="@color/blacklight"
+        android:textSize="@dimen/sp_18"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TVUpload1" />
+
+    <ImageView
+
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_30"
+        android:src="@drawable/tickmark"
+        app:layout_constraintLeft_toLeftOf="@id/TvUpload2"
+        app:layout_constraintTop_toTopOf="@id/TvUpload2" />
+
+    <TextView
+        android:id="@+id/TvUpload3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_100"
+        android:layout_margin="@dimen/dp_35"
+        android:background="@drawable/rectangle"
+        android:backgroundTint="@color/verLightblu"
+        android:paddingLeft="@dimen/dp_70"
+        android:paddingTop="@dimen/dp_25"
+        android:text="@string/upload_text3"
+        android:textColor="@color/blacklight"
+        android:textSize="@dimen/sp_18"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TvUpload2" />
+
+    <ImageView
+
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_30"
+        android:src="@drawable/tickmark"
+        app:layout_constraintLeft_toLeftOf="@id/TvUpload3"
+        app:layout_constraintTop_toTopOf="@id/TvUpload3" />
+
+    <TextView
+        android:id="@+id/TvUpload4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_100"
+        android:layout_margin="@dimen/dp_35"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="149dp"
+        android:background="@drawable/rectangle"
+        android:backgroundTint="@color/veryLightRed"
+        android:paddingLeft="@dimen/dp_70"
+        android:paddingTop="@dimen/dp_25"
+        android:text="@string/upload_text4"
+        android:textColor="@color/blacklight"
+        android:textSize="@dimen/sp_18"
+        app:layout_constraintBottom_toTopOf="@+id/BtnIntroduce"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TvUpload3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_30"
+        android:src="@drawable/cross_mark"
+        app:layout_constraintLeft_toLeftOf="@id/TvUpload4"
+        app:layout_constraintTop_toTopOf="@id/TvUpload4" />
+
+    <Button
+        android:id="@+id/BtnIntroduce"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:layout_margin="@dimen/dp_25"
+        android:background="@drawable/rectanglebutton"
+        android:backgroundTint="@color/appBlue"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_20"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="25dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="71dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

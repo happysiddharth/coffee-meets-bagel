@@ -163,7 +163,7 @@ public class OtpPage extends AppCompatActivity {
 
                             }
                         });
-                        OtpPageBtnClick.setTextColor(getResources().getColor(R.color.black));
+                        OtpPageBtnClick.setTextColor(getResources().getColor(R.color.white));
                         OtpPageBtnClick.setBackground(getResources().getDrawable(R.drawable.next_btn_enable));
 
                     }else{

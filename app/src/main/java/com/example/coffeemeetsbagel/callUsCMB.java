@@ -4,8 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.Editable;
-import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -33,7 +31,7 @@ public class callUsCMB extends AppCompatActivity {
 
     }
     private void init(){
-        btnCmbClick=findViewById(R.id.BtnCMB);
+        btnCmbClick=findViewById(R.id.nextBtn);
         firstName = (EditText)findViewById(R.id.firstName);
         secondName = (EditText)findViewById(R.id.lastName);
     }
