@@ -7,19 +7,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class EnterPhoneNoToSignup extends AppCompatActivity {
-
-    private Button getStartedBtn;
+public class OtpPage extends AppCompatActivity {
+  private Button OtpPageBtnClick;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_enter_phone_no_to_signup);
-        getStartedBtn=findViewById(R.id.btnEnterphno);
-        getStartedBtn.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_otp_page);
+        OtpPageBtnClick=findViewById(R.id.OtppageBtn);
+        OtpPageBtnClick.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent otpPage=new Intent(EnterPhoneNoToSignup.this,OtpPage.class);
-                startActivity(otpPage);
+                Intent callusCMB=new Intent(OtpPage.this,callUsCMB.class);
+                startActivity(callusCMB);
             }
         });
     }

@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CoffeeMeetsBagel">
-        <activity android:name=".EnterPhoneNoToSignup"></activity>
+        <activity android:name=".whatareYouLookingFor"></activity>
+        <activity android:name=".NiceToMeet" />
+        <activity android:name=".callUsCMB" />
+        <activity android:name=".OtpPage" />
+        <activity android:name=".EnterPhoneNoToSignup" />
         <activity android:name=".TermsAndPrivacy" />
         <activity android:name=".MainActivity">
             <intent-filter>

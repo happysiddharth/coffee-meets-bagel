@@ -18,8 +18,8 @@ public class MainActivity extends AppCompatActivity {
         termnConditionBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent viewTermNCondition = new Intent(getApplicationContext(),TermsAndPrivacy.class);
-                startActivity(viewTermNCondition);
+                Intent viewEnterPhoneNo = new Intent(MainActivity.this,EnterPhoneNoToSignup.class);
+                startActivity(viewEnterPhoneNo);
             }
         });
     }
