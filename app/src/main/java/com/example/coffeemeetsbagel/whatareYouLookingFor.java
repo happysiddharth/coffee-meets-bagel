@@ -1,29 +1,25 @@
 package com.example.coffeemeetsbagel;
 
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
-import android.os.Build;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 
-public class SettlePeriod extends AppCompatActivity {
+public class whatareYouLookingFor extends AppCompatActivity {
     private RadioButton imreadynow,within2years,morethantwoyears,notsure;
     private Button nextBtn;
     private ImageView backToPrevious;
     private int currentActiveRadioButton = 0,previousActiveRadioButton = 0;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_settle_period);
+        setContentView(R.layout.activity_whatare_you_looking_for);
 
         init();
 
@@ -66,9 +62,15 @@ public class SettlePeriod extends AppCompatActivity {
             }
         });
 
+        nextBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent nextpagetosetlePeriod = new Intent(getApplicationContext(),SettlePeriod.class);
+                startActivity(nextpagetosetlePeriod);
+            }
+        });
 
     }
-
     private void toggleRadioButtion(int currentRadioButtonId){
         if (this.previousActiveRadioButton!=0){
 

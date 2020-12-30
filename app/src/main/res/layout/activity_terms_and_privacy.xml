@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="87dp" />
+        app:layout_constraintGuide_begin="61dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
@@ -30,12 +30,13 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="414dp"
-        android:layout_height="90dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
         android:layout_marginTop="4dp"
         android:background="@android:color/white"
         android:orientation="horizontal"
-        android:padding="20dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,26 +46,30 @@
             android:id="@+id/backToPrevious"
             android:layout_width="35dp"
             android:layout_height="37dp"
-            android:layout_gravity="center|start"
-            app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+            app:srcCompat="@drawable/ic_baseline_arrow_back_24"
+            tools:ignore="VectorDrawableCompat"
+            android:layout_gravity="center|start"/>
+
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:layout_marginStart="50dp"
-            android:layout_marginLeft="50dp"
+            android:layout_marginRight="20dp"
+
             android:gravity="center"
+
             android:text="@string/privacy_terms"
             android:textColor="#868595"
             android:textSize="24sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_marginEnd="20dp" />
     </LinearLayout>
 
     <ScrollView
-        android:layout_width="295dp"
-        android:layout_height="625dp"
+        android:layout_width="316dp"
+        android:layout_height="640dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
@@ -88,7 +93,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="Last Updated: October 6, 2020"
+                android:text="@string/last_updated_october_6_2020"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold" />

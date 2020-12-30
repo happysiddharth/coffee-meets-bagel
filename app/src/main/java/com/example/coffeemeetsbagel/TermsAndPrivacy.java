@@ -2,12 +2,13 @@ package com.example.coffeemeetsbagel;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class TermsAndPrivacy extends AppCompatActivity {
-    ImageView backToPrevious;
+    private ImageView backToPrevious;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

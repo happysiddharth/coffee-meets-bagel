@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CoffeeMeetsBagel">
-        <activity android:name=".IntoPage3Final"></activity>
+        <activity android:name=".SignInForRewards"/>
+        <activity android:name=".IntoPage3Final" />
+
         <activity android:name=".IntroPage2" />
         <activity android:name=".IntroStep1" />
         <activity android:name=".TermsAndPrivacy" />
@@ -17,6 +19,11 @@
         <activity android:name=".BirthdayDate" />
         <activity android:name=".SelectGender" />
         <activity android:name=".SettlePeriod" />
+        <activity android:name=".whatareYouLookingFor"/>
+        <activity android:name=".NiceToMeet" />
+        <activity android:name=".callUsCMB" />
+        <activity android:name=".OtpPage" />
+        <activity android:name=".EnterPhoneNoToSignup" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

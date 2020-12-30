@@ -23,6 +23,6 @@ public class IntroStep1 extends AppCompatActivity {
         });
     }
     private void init(){
-        step2Btn = findViewById(R.id.toStep3Btn);
+        step2Btn = findViewById(R.id.letsDothisBtn);
     }
 }
