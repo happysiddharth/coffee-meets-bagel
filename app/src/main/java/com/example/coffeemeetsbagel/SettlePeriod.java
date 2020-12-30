@@ -1,16 +1,13 @@
 package com.example.coffeemeetsbagel;
 
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
-import android.os.Build;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 
@@ -66,6 +63,16 @@ public class SettlePeriod extends AppCompatActivity {
             }
         });
 
+        nextBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               if (previousActiveRadioButton!=0){
+                   Intent intentToSelectGender = new Intent(getApplicationContext(),SelectGender.class);
+                   startActivity(intentToSelectGender);
+               }
+            }
+        });
+
 
     }
 
@@ -86,8 +93,8 @@ public class SettlePeriod extends AppCompatActivity {
 
     }
     private void init(){
-        imreadynow =  (RadioButton)findViewById(R.id.imreadynow);
-        within2years =  (RadioButton)findViewById(R.id.within2years);
+        imreadynow =  (RadioButton)findViewById(R.id.man);
+        within2years =  (RadioButton)findViewById(R.id.women);
         morethantwoyears =  (RadioButton)findViewById(R.id.morethantwoyears);
         notsure =  (RadioButton)findViewById(R.id.notsure);
         nextBtn =  findViewById(R.id.nextBtn);

@@ -48,5 +48,8 @@
     <string name="a_commited_relationship">A commited relationship</string>
     <string name="something_casual">Something casual</string>
     <string name="not_sure_yet">Not sure yet</string>
+    <string name="which_gender_do_you_identify_as">Which gender do you identify as?</string>
+    <string name="i_m_a_women">I\'m a women</string>
+    <string name="i_m_a_man">I\'m a man</string>
 
 </resources>
