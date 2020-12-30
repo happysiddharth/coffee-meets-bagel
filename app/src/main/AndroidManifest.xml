@@ -9,14 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CoffeeMeetsBagel">
-<<<<<<< HEAD
-        <activity android:name=".AddLocation"></activity>
+        <activity android:name=".PreviouslyDated"></activity>
+        <activity android:name=".AddLocation" />
         <activity android:name=".BirthdayDate" />
         <activity android:name=".SelectGender" />
         <activity android:name=".SettlePeriod" />
-=======
-        <activity android:name=".TermsAndPrivacy"></activity>
->>>>>>> 74b715f9750ef61262e3bb7fd0e7747afbfcdffd
+        <activity android:name=".TermsAndPrivacy" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
