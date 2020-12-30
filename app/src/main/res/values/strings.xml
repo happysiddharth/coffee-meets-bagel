@@ -49,7 +49,7 @@
                                are new to online dating,<br />
                                so you arent alone
     </string>
-    w
+
     <string name="daters_Text2">Lets start your profile<br />
                                 together.A complete <br />
                                 profile will help you stand<br />
@@ -69,5 +69,29 @@
     <string name="upload_text4">No sunglasses or big hats,<br />
                                 playing mesterious is out</string>
     <string name="next">Next</string>
+    <!--holdToReload page-->
+    <string name="done">Done</string>
+    <string name="hold_to_reorder_tap_to_edit">Hold to reorder.Tap to Edit</string>
+
+    <!--Answering Question page-->
+    <string name="answering_text">Looking good! Now <br />
+                                  help us get to know<br />
+                                   you a little better<br />
+                                   by answering a few<br />
+                                   questions.</string>
+    <string name="how_tall_are_you">How tall are you?</string>
+    <string name="_167cm">167cm</string>
+    <string name="_169cm">169cm</string>
+    <string name="settings">Settings</string>
+    <string name="account">Account</string>
+    <string name="push_notifications">Push Notifications</string>
+    <string name="daily_noon_alert">Daily Noon Alert</string>
+    <string name="chats">Chats</string>
+    <string name="customer_service">Customer Service</string>
+    <string name="more_information">More Information</string>
+    <string name="privacy_terms_of_services">Privacy terms of Services</string>
+    <string name="licences">Licences</string>
+    <string name="help">Help</string>
+
 
 </resources>
