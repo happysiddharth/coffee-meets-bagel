@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NiceToMeet">
+
+    <TextView
+        android:id="@+id/TVntm1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_100"
+        android:layout_marginLeft="@dimen/dp_35"
+        android:textSize="@dimen/sp_30"
+        android:textColor="@color/blacklight"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="@string/nicetomeet_text"/>
+    <EditText
+        android:id="@+id/EtvNtm1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_80"
+        app:layout_constraintTop_toBottomOf="@id/TVntm1"
+        android:background="@drawable/rectangleedittext"
+        android:backgroundTint="@color/tinygrey"
+        android:layout_marginLeft="@dimen/dp_25"
+        android:layout_marginRight="@dimen/dp_25"
+        android:layout_marginTop="@dimen/dp_35"
+        android:hint="@string/email"
+        android:paddingTop="@dimen/dp_25"
+        android:paddingLeft="@dimen/dp_25"/>
+    <View
+        android:layout_marginLeft="@dimen/dp_25"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_2"
+        app:layout_constraintTop_toBottomOf="@id/EtvNtm1"
+
+        android:layout_marginRight="@dimen/dp_25"
+        android:background="@color/blacklight"/>
+    <Button
+        android:id="@+id/BtnNice2Meet"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/rectanglebutton"
+        android:backgroundTint="@color/tinygrey"
+        android:layout_margin="@dimen/dp_25"
+        android:text="Next"
+        android:textColor="@color/darkgrey"
+        android:textSize="@dimen/sp_20"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

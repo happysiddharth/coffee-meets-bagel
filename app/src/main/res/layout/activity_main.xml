@@ -29,7 +29,7 @@
         app:layout_constraintVertical_bias="0.748" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/phoneLogin"
         android:layout_width="281dp"
         android:layout_height="48dp"
         android:background="@drawable/border_radius_button"
@@ -54,7 +54,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.436"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/phoneLogin"
         app:layout_constraintVertical_bias=".400" />
 
     <Button

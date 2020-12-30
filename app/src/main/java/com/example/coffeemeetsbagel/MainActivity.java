@@ -9,19 +9,13 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    private Button fb_login_btn,termnConditionBtn;
+    private Button fb_login_btn,termnConditionBtn,phoneLogin;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         init();
-        termnConditionBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent viewTermNCondition = new Intent(getApplicationContext(),TermsAndPrivacy.class);
-                startActivity(viewTermNCondition);
-            }
-        });
+
         fb_login_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -29,10 +23,18 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(fbLoginIntent);
             }
         });
+        phoneLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent viewEnterPhoneNo = new Intent(MainActivity.this,EnterPhoneNoToSignup.class);
+                startActivity(viewEnterPhoneNo);
+            }
+        });
     }
 
     private void init(){
         fb_login_btn = findViewById(R.id.fb_login_btn);
         termnConditionBtn = findViewById(R.id.termnConditionBtn);
+        phoneLogin = findViewById(R.id.phoneLogin);
     }
 }
