@@ -29,7 +29,7 @@
         android:background="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/ic_left_arrow" />
+        android:src="@drawable/ic_baseline_arrow_back_24" />
 
     <TextView
         android:id="@+id/textView2"
