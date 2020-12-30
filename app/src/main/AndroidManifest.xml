@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CoffeeMeetsBagel">
-        <activity android:name=".whatareYouLookingFor"></activity>
+        <activity android:name=".uploadPhotoToIntroduce" />
+        <activity android:name=".cmbDaters" />
+        <activity android:name=".whatareYouLookingFor" />
         <activity android:name=".NiceToMeet" />
         <activity android:name=".callUsCMB" />
         <activity android:name=".OtpPage" />

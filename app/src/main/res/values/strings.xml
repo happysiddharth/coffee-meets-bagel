@@ -35,12 +35,39 @@
     <string name="email">Email</string>
 
     <!--what are you looking for page-->
-    <string name="lookingfor_text">Just between us,what <br/>
+    <string name="lookingfor_text">Just between us,what <br />
         are you looking for?
     </string>
     <string name="marriage">Marriage</string>
     <string name="relationship">A committed relationship</string>
     <string name="casual">Something casual</string>
     <string name="notsur">Not sure yet</string>
+
+    <!--cmb Daters page-->
+
+    <string name="daters_Text">About 60% of CMB Daters<br />
+                               are new to online dating,<br />
+                               so you arent alone
+    </string>
+    w
+    <string name="daters_Text2">Lets start your profile<br />
+                                together.A complete <br />
+                                profile will help you stand<br />
+                                out-and make you more<br />
+                                likely to match
+    </string>
+    <string name="sounds_good">Sounds Good</string>
+
+    <!--UploadPhotoToIntroduce yourself-->
+    <string name="upload_text">Next,upload a few <br />
+                          photos so we can<br />
+                           introduce you</string>
+    <string name="upload_text2">Upload a clear headshot as<br />
+                             your first photo</string>
+    <string name="upload_text3">Include a photo that shows<br />
+                                what you love to do</string>
+    <string name="upload_text4">No sunglasses or big hats,<br />
+                                playing mesterious is out</string>
+    <string name="next">Next</string>
 
 </resources>
