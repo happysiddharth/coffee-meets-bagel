@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OtpPage">
+
+    <ImageView
+        android:id="@+id/goToPreviousPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_15"
+        android:padding="@dimen/dp_10"
+        android:src="@drawable/ic_backbutton_"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+
+    <ImageView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:padding="@dimen/dp_10"
+        android:src="@drawable/ic_right_arrow"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/otp1"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_60"
+
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:background="@drawable/rectangle"
+        android:maxLength="1"
+        android:paddingStart="@dimen/dp_10"
+        android:paddingLeft="@dimen/dp_10"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline4"
+        app:layout_constraintVertical_bias="0.511" />
+
+    <EditText
+        android:id="@+id/otp2"
+
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_60"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/rectangle"
+        android:maxLength="1"
+        android:paddingLeft="@dimen/dp_10"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintLeft_toRightOf="@id/otp1"
+        app:layout_constraintStart_toEndOf="@+id/otp1"
+        app:layout_constraintTop_toTopOf="@+id/guideline4"
+        app:layout_constraintVertical_bias="0.511" />
+
+    <EditText
+        android:id="@+id/otp3"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_60"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/rectangle"
+        android:maxLength="1"
+        android:paddingLeft="@dimen/dp_10"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintLeft_toRightOf="@id/otp2"
+        app:layout_constraintStart_toEndOf="@+id/otp2"
+        app:layout_constraintTop_toTopOf="@+id/guideline4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/otp4"
+
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_60"
+
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        android:background="@drawable/rectangle"
+        android:maxLength="1"
+        android:paddingLeft="@dimen/dp_10"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/otp3"
+        app:layout_constraintTop_toTopOf="@+id/guideline4"
+        app:layout_constraintVertical_bias="0.367" />
+
+    <LinearLayout
+        android:id="@+id/Tvotpmessage"
+        android:layout_width="400dp"
+        android:layout_height="130dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline5">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_50"
+            android:gravity="center"
+            android:text="@string/otp_timing" />
+
+        <TextView
+            android:id="@+id/phonenumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_50"
+            android:gravity="center"
+            android:text=" +91 9045426913" />
+
+        <TextView
+            android:id="@+id/counterText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_50"
+            android:gravity="center"
+            android:text=" within 29 sec." />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/resendOtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/rsend_code"
+        app:layout_constraintTop_toBottomOf="@id/Tvotpmessage"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/OtppageBtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_80"
+        android:layout_margin="@dimen/dp_15"
+        android:background="@drawable/rectanglebutton"
+        android:backgroundTint="@color/verylight"
+
+
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/verify"
+        android:textColor="@color/darkgrey"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="86dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="234dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

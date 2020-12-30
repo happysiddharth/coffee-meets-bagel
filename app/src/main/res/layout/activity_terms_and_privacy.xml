@@ -46,9 +46,10 @@
             android:id="@+id/backToPrevious"
             android:layout_width="35dp"
             android:layout_height="37dp"
-            android:layout_gravity="center|start"
             app:srcCompat="@drawable/ic_baseline_arrow_back_24"
-            tools:ignore="VectorDrawableCompat" />
+            tools:ignore="VectorDrawableCompat"
+            android:layout_gravity="center|start"/>
+
 
         <TextView
             android:id="@+id/textView2"

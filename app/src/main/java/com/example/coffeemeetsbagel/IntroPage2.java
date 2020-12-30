@@ -23,6 +23,6 @@ public class IntroPage2 extends AppCompatActivity {
         });
     }
     private void init(){
-        toStep3Btn = findViewById(R.id.toStep3Btn);
+        toStep3Btn = findViewById(R.id.letsDothisBtn);
     }
 }

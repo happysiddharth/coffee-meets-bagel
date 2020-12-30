@@ -8,7 +8,7 @@
     tools:context=".IntroPage2">
 
     <Button
-        android:id="@+id/toStep3Btn"
+        android:id="@+id/letsDothisBtn"
         android:layout_width="75dp"
         android:layout_height="33dp"
         android:background="@android:color/transparent"

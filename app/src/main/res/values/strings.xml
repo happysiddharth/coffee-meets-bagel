@@ -7,4 +7,42 @@
     <string name="there_s_someone_you_should_meet">There\'s someone you should meet.</string>
     <string name="privacy_terms"><![CDATA[Privacy & Terms]]></string>
     <string name="last_updated_october_6_2020">Last Updated: October 6, 2020</string>
+
+    <!--EnterphonenotoSignu String-->
+    <string name="whats_yout_number">Whats your number?</string>
+    <string name="useno">we ll use this number to create your account</string>
+    <string name="phno_91">+91</string>
+    <string name="notetext">If youve logged in previously with Facebook</string>
+    <string name="note">Note:</string>
+    <string name="noteletter2">using this phone login will create new account</string>
+
+    <!--otp page String-->
+    <string name="otp_timing">Your code will be sent to </string>
+    <string name="otp_timing_2ndlinee">sec.</string>
+    <string name="rsend_code"> <u>Resend code</u></string>
+    <string name="verify">Verify</string>
+
+    <!--call us Cmb page-->
+    <string name="Cmb">You can call us CMB,</string>
+    <string name="whatisname">whats your name?</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="why">why?</string>
+
+    <!--nice to meet page-->
+    <string name="nicetomeet_text">Nice to meet you,<br />
+    Siddhart.Whats your<br />
+    email?</string>
+    <string name="email">Email</string>
+
+    <!--what are you looking for page-->
+    <string name="lookingfor_text">Just between us,what <br/>
+        are you looking for?
+    </string>
+    <string name="marriage">Marriage</string>
+    <string name="relationship">A committed relationship</string>
+    <string name="casual">Something casual</string>
+    <string name="notsur">Not sure yet</string>
+
+>>>>>>> aditiya-test
 </resources>
