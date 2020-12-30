@@ -43,6 +43,10 @@
     <string name="relationship">A committed relationship</string>
     <string name="casual">Something casual</string>
     <string name="notsur">Not sure yet</string>
+    <string name="great_you_ll_fit_right_in_when_would_you_like_to_settle_down_ideally">Great, you\'ll fit right in! When would you like to settle down, ideally ?</string>
+    <string name="just_between_us_what_are_you_looking_for">Just between us,what are you looking for?</string>
+    <string name="a_commited_relationship">A commited relationship</string>
+    <string name="something_casual">Something casual</string>
+    <string name="not_sure_yet">Not sure yet</string>
 
->>>>>>> aditiya-test
 </resources>

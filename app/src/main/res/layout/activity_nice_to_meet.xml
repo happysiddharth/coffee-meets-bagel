@@ -27,35 +27,37 @@
         android:layout_height="@dimen/dp_80"
         app:layout_constraintTop_toBottomOf="@id/nameofuser"
         android:background="@drawable/rectangleedittext"
-        android:backgroundTint="@color/tinygrey"
         android:layout_marginLeft="@dimen/dp_25"
         android:layout_marginRight="@dimen/dp_25"
         android:layout_marginTop="@dimen/dp_35"
         android:hint="@string/email"
         android:paddingTop="@dimen/dp_25"
         android:paddingLeft="@dimen/dp_25"/>
+
     <View
-        android:layout_marginLeft="@dimen/dp_25"
+        android:id="@+id/view2"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp_2"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:background="@color/blacklight"
         app:layout_constraintTop_toBottomOf="@id/email"
+        tools:layout_editor_absoluteX="25dp" />
 
-        android:layout_marginRight="@dimen/dp_25"
-        android:background="@color/blacklight"/>
     <Button
         android:id="@+id/BtnNice2Meet"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/dp_60"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:background="@drawable/rectanglebutton"
-        android:backgroundTint="@color/tinygrey"
-        android:layout_margin="@dimen/dp_25"
+        android:layout_width="309dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:background="@drawable/rectangle_bg"
         android:text="Next"
-        android:textColor="@color/darkgrey"
-        android:textSize="@dimen/sp_20"/>
-
-
-
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.963" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
