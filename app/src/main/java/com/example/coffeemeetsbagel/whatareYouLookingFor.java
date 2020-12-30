@@ -65,8 +65,11 @@ public class whatareYouLookingFor extends AppCompatActivity {
         nextBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent nextpagetosetlePeriod = new Intent(getApplicationContext(),SettlePeriod.class);
-                startActivity(nextpagetosetlePeriod);
+               if (previousActiveRadioButton!=0)
+               {
+                   Intent nextpagetosetlePeriod = new Intent(getApplicationContext(),SettlePeriod.class);
+                   startActivity(nextpagetosetlePeriod);
+               }
             }
         });
 
@@ -88,8 +91,8 @@ public class whatareYouLookingFor extends AppCompatActivity {
 
     }
     private void init(){
-        imreadynow =  (RadioButton)findViewById(R.id.imreadynow);
-        within2years =  (RadioButton)findViewById(R.id.within2years);
+        imreadynow =  (RadioButton)findViewById(R.id.man);
+        within2years =  (RadioButton)findViewById(R.id.women);
         morethantwoyears =  (RadioButton)findViewById(R.id.morethantwoyears);
         notsure =  (RadioButton)findViewById(R.id.notsure);
         nextBtn =  findViewById(R.id.nextBtn);
