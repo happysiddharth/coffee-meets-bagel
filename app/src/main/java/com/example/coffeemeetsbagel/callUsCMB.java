@@ -31,7 +31,7 @@ public class callUsCMB extends AppCompatActivity {
 
     }
     private void init(){
-        btnCmbClick=findViewById(R.id.nextBtn);
+        btnCmbClick=findViewById(R.id.nextPageBtn);
         firstName = (EditText)findViewById(R.id.firstName);
         secondName = (EditText)findViewById(R.id.lastName);
     }

@@ -34,6 +34,6 @@ public class AddLocation extends AppCompatActivity {
     }
     private void init(){
         backBtn = findViewById(R.id.prevousPageImgBtn);
-        nextBtn = findViewById(R.id.nextBtn);
+        nextBtn = findViewById(R.id.nextPageBtn);
     }
 }

@@ -76,7 +76,7 @@
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
         android:background="@color/blacklight"
-        app:layout_constraintBottom_toTopOf="@+id/nextBtn"
+        app:layout_constraintBottom_toTopOf="@+id/nextPageBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="@id/firstName"
         app:layout_constraintTop_toBottomOf="@id/lastName"
@@ -97,7 +97,7 @@
         app:layout_constraintTop_toTopOf="@id/lastName" />
 
     <Button
-        android:id="@+id/nextBtn"
+        android:id="@+id/nextPageBtn"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="50dp"
