@@ -9,18 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CoffeeMeetsBagel">
-
-
-
-        <activity android:name=".SignInForRewards"/>
+        <activity android:name=".Dashboard"></activity>
+        <activity android:name=".SignInForRewards" />
         <activity android:name=".IntoPage3Final" />
-
         <activity android:name=".IntroPage2" />
         <activity android:name=".IntroStep1" />
         <activity android:name=".TermsAndPrivacy" />
-
-        <activity android:name=".Suggested"/>
-        <activity android:name=".Discover"/>
+        <activity android:name=".Suggested" />
+        <activity android:name=".Discover" />
         <activity android:name=".Chats" />
         <activity android:name=".LikesYou" />
         <activity android:name=".Qualification" />
@@ -29,30 +25,21 @@
         <activity android:name=".Religion" />
         <activity android:name=".Ethnicity" />
         <activity android:name=".PreviouslyDated" />
-
         <activity android:name=".AddLocation" />
         <activity android:name=".BirthdayDate" />
         <activity android:name=".SelectGender" />
         <activity android:name=".SettlePeriod" />
-
-        <activity android:name=".whatareYouLookingFor"/>
-
-
-        <activity android:name=".Setting"/>
+        <activity android:name=".whatareYouLookingFor" />
+        <activity android:name=".Setting" />
         <activity android:name=".HeightInput" />
         <activity android:name=".AnsweringQuestion" />
         <activity android:name=".HoldToReloadPage" />
-
         <activity android:name=".uploadPhotoToIntroduce" />
         <activity android:name=".cmbDaters" />
-
         <activity android:name=".NiceToMeet" />
         <activity android:name=".callUsCMB" />
         <activity android:name=".OtpPage" />
         <activity android:name=".EnterPhoneNoToSignup" />
-
-
-
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
