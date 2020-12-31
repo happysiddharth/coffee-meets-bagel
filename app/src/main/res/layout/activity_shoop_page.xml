@@ -338,7 +338,7 @@
         android:textStyle="bold"
         android:text="Get Free Beans"
         android:textSize="@dimen/sp_20"
-        android:textColor="@color/blacklight"
+        android:textColor="@color/blacklight"/>
 
 
 

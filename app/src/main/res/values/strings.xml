@@ -97,6 +97,13 @@
     <string name="all_in">All in one place.Like them back to save time</string>
     <string name="match_instantly">and match instantly</string>
     <string name="subscribe">Subscribe</string>
+    <string name="discover_likes">Discover Likes</string>
+    <string name="discoverLikesTesxt">To explore bagels beyound
+        our daily <br/> suggestions,head to Discover.Tap <br/>the heart icon  to send Discover<br/> likes</string>
+    <string name="other_item">Learn about other items in the app</string>
+    <string name="reopen_chat">Reopen Chat</string>
+    <string name="reopenchat_text">Want to get to know a Begel better<br/> Extend expired conversations
+                    from <br/>the Chat section for 30 days</string>
 
 
 </resources>
