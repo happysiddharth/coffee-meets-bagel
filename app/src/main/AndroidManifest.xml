@@ -20,6 +20,9 @@
         <activity android:name=".TermsAndPrivacy" />
 
         <activity android:name=".Suggested"/>
+        <activity android:name=".Discover"/>
+        <activity android:name=".Chats" />
+        <activity android:name=".LikesYou" />
         <activity android:name=".Qualification" />
         <activity android:name=".SchoolName" />
         <activity android:name=".JobTitle" />
