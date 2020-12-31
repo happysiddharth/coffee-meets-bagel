@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShoopPage">
+
+    <ImageView
+        android:id="@+id/iVShop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_25"
+        android:layout_marginTop="@dimen/dp_25"
+        android:src="@drawable/ic_backblue_"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TvShop1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:text="@string/shop"
+        android:textSize="@dimen/sp_25"
+
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/iVShop" />
+
+    <LinearLayout
+        android:id="@+id/LinearShop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_15"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TvShop1">
+
+        <TextView
+            android:id="@+id/TvinLinear1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/shop"
+            android:textAllCaps="true"
+            android:textColor="@color/appBlue"
+            android:textSize="@dimen/sp_20"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TvinLinear2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="WALLET"
+            android:textColor="@color/lightGrey"
+            android:textSize="@dimen/sp_20"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/Li2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/LinearShop">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_5"
+            android:layout_weight="1"
+            android:background="@color/appBlue" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="3dp"
+            android:layout_weight="1"
+            android:background="@color/lightGrey" />
+    </LinearLayout>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/dp_25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="368dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Cv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        app:cardCornerRadius="@dimen/dp_15"
+        app:layout_constraintEnd_toEndOf="@id/guideline2shop"
+        app:layout_constraintStart_toStartOf="@id/guideline1shop"
+        app:layout_constraintTop_toTopOf="@id/Li2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/love" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text="@string/see_everyone_who_likes_you"
+                android:textColor="@color/blacklight"
+                android:textSize="@dimen/sp_20" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="@string/all_in" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/match_instantly" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_10"
+                android:src="@drawable/dots" />
+
+            <Button
+                android:id="@+id/BtnShop"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_60"
+                android:layout_margin="@dimen/dp_15"
+                android:background="@drawable/rectanglebutton"
+                android:backgroundTint="@color/appBlue"
+                android:text="@string/subscribe"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_20" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:id="@+id/V1shop"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_2"
+        android:layout_marginTop="@dimen/dp_15"
+        android:background="@color/light"
+        app:layout_constraintEnd_toEndOf="@id/guideline2shop"
+        app:layout_constraintStart_toStartOf="@id/guideline1shop"
+        app:layout_constraintTop_toBottomOf="@id/Cv" />
+
+    <TextView
+        android:id="@+id/TvBeans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="Buy Beans"
+        android:textColor="@color/blacklight"
+        android:textSize="@dimen/sp_20"
+        app:layout_constraintEnd_toEndOf="@id/guideline2shop"
+        app:layout_constraintStart_toStartOf="@id/guideline1shop"
+        app:layout_constraintTop_toBottomOf="@id/V1shop" />
+
+    <TextView
+        android:id="@+id/TvBeanstext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:gravity="left"
+        android:text="Beans unlock features like extra Bagels"
+        android:textSize="@dimen/sp_20"
+        app:layout_constraintStart_toStartOf="@id/guideline1shop"
+        app:layout_constraintTop_toBottomOf="@id/TvBeans" />
+    <View
+        android:id="@+id/V2shop"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_2"
+        android:layout_marginTop="@dimen/dp_15"
+        android:background="@color/light"
+        app:layout_constraintEnd_toEndOf="@id/guideline2shop"
+        app:layout_constraintStart_toStartOf="@id/guideline1shop"
+        app:layout_constraintTop_toBottomOf="@id/TvBeanstext" />
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineshopmiddle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="87dp" />
+    <TextView
+        android:id="@+id/TvqtyBeans1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/guideline1shop"
+        app:layout_constraintTop_toBottomOf="@id/V2shop"
+        android:text="3000"
+        android:textSize="@dimen/sp_20"
+        android:textColor="@color/blacklight"
+        android:layout_marginTop="@dimen/dp_10"/>
+    <TextView
+        android:id="@+id/TvqtyBeansRed1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/guidelineshopmiddle"
+        app:layout_constraintTop_toBottomOf="@id/V2shop"
+        android:text="Save 60%"
+        android:textSize="@dimen/sp_20"
+        android:textColor="@color/lighrRed"
+        android:layout_marginTop="@dimen/dp_10"/>
+    <Button
+        android:layout_width="@dimen/dp_130"
+        android:layout_height="@dimen/dp_35"
+        app:layout_constraintRight_toRightOf="@id/guideline2shop"
+        app:layout_constraintTop_toTopOf="@id/V2shop"
+        android:background="@drawable/rectanglebutton"
+        android:backgroundTint="@color/appBlue"
+        android:text="1567.12"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/dp_10"
+        android:textSize="@dimen/sp_20"/>
+    <View
+        android:id="@+id/V3shop"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_2"
+        android:layout_marginTop="@dimen/dp_15"
+        android:background="@color/light"
+        app:layout_constraintEnd_toEndOf="@id/guideline2shop"
+        app:layout_constraintStart_toStartOf="@id/guideline1shop"
+        app:layout_constraintTop_toBottomOf="@id/TvqtyBeansRed1" />
+
+    <TextView
+        android:id="@+id/TvqtyBeans2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/guideline1shop"
+        app:layout_constraintTop_toBottomOf="@id/V3shop"
+        android:text="2000"
+        android:textSize="@dimen/sp_20"
+        android:textColor="@color/blacklight"
+        android:layout_marginTop="@dimen/dp_10"/>
+    <TextView
+        android:id="@+id/TvqtyBeansRed2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/guidelineshopmiddle"
+        app:layout_constraintTop_toBottomOf="@id/V3shop"
+        android:text="Save 40%"
+        android:textSize="@dimen/sp_20"
+        android:textColor="@color/lighrRed"
+        android:layout_marginTop="@dimen/dp_10"/>
+    <Button
+        android:layout_width="@dimen/dp_130"
+        android:layout_height="@dimen/dp_35"
+        app:layout_constraintRight_toRightOf="@id/guideline2shop"
+        app:layout_constraintTop_toTopOf="@id/V3shop"
+        android:background="@drawable/rectanglebutton"
+        android:backgroundTint="@color/appBlue"
+        android:text="1504.41"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/dp_10"
+        android:textSize="@dimen/sp_20"/>
+    <View
+        android:id="@+id/V4shop"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_2"
+        android:layout_marginTop="@dimen/dp_15"
+        android:background="@color/light"
+        app:layout_constraintEnd_toEndOf="@id/guideline2shop"
+        app:layout_constraintStart_toStartOf="@id/guideline1shop"
+        app:layout_constraintTop_toBottomOf="@id/TvqtyBeansRed2" />
+    <TextView
+        android:id="@+id/TvqtyBeans3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/guideline1shop"
+        app:layout_constraintTop_toBottomOf="@id/V4shop"
+        android:text="100"
+        android:textSize="@dimen/sp_20"
+        android:textColor="@color/blacklight"
+        android:layout_marginTop="@dimen/dp_10"/>
+
+    <Button
+        android:layout_width="@dimen/dp_130"
+        android:layout_height="@dimen/dp_35"
+        app:layout_constraintRight_toRightOf="@id/guideline2shop"
+        app:layout_constraintTop_toTopOf="@id/V4shop"
+        android:background="@drawable/rectanglebutton"
+        android:backgroundTint="@color/appBlue"
+        android:text="124.79"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/dp_10"
+        android:textSize="@dimen/sp_20"/>
+    <View
+        android:id="@+id/V5shop"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_2"
+        android:layout_marginTop="@dimen/dp_15"
+        android:background="@color/light"
+        app:layout_constraintEnd_toEndOf="@id/guideline2shop"
+        app:layout_constraintStart_toStartOf="@id/guideline1shop"
+        app:layout_constraintTop_toBottomOf="@id/TvqtyBeans3" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="@dimen/dp_15"
+        android:textStyle="bold"
+        android:text="Get Free Beans"
+        android:textSize="@dimen/sp_20"
+        android:textColor="@color/blacklight"
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

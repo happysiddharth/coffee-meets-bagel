@@ -92,6 +92,11 @@
     <string name="privacy_terms_of_services">Privacy terms of Services</string>
     <string name="licences">Licences</string>
     <string name="help">Help</string>
+    <string name="shop">Shop</string>
+    <string name="see_everyone_who_likes_you">See everyone who likes you</string>
+    <string name="all_in">All in one place.Like them back to save time</string>
+    <string name="match_instantly">and match instantly</string>
+    <string name="subscribe">Subscribe</string>
 
 
 </resources>
