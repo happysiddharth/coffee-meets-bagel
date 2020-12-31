@@ -19,6 +19,7 @@
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:padding="@dimen/dp_5"
             android:background="@color/white"
             android:src="@drawable/ic_user" />
         <LinearLayout
@@ -29,29 +30,29 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="@dimen/dp_8"
                 android:gravity="center"
-                android:text="Suggested"
-                android:textSize="25sp" />
+                android:text="@string/text_suggested"
+                android:textSize="@dimen/sp_25" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="23:52:07"
-                android:textSize="14sp" />
+                android:text="@string/time_1"
+                android:textSize="@dimen/sp_14" />
         </LinearLayout>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginHorizontal="10dp"
+            android:layout_marginHorizontal="@dimen/dp_10"
             android:drawableEnd="@drawable/ic_adjustment"
-            android:drawablePadding="2dp"
-            android:text="1063"
+            android:drawablePadding="@dimen/dp_2"
+            android:text="@string/_1063"
             android:textColor="@color/appBlue"
-            android:textSize="15sp" />
+            android:textSize="@dimen/sp_15" />
     </LinearLayout>
     <LinearLayout
         android:id="@+id/linearLayout2"
@@ -66,7 +67,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="@dimen/dp_5"
             android:background="@color/white"
             android:src="@drawable/ic_suggested" />
 
@@ -81,7 +82,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="@dimen/dp_5"
             android:background="@color/white"
             android:src="@drawable/ic_discover" />
 
@@ -89,7 +90,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="@dimen/dp_5"
             android:background="@color/white"
             android:src="@drawable/ic_chat" />
 
@@ -98,8 +99,8 @@
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"
-        android:layout_height="300dp"
-        android:layout_marginTop="12dp"
+        android:layout_height="@dimen/dp_300"
+        android:layout_marginTop="@dimen/dp_12"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
@@ -108,9 +109,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="385dp"
-        android:layout_marginBottom="53dp"
-        android:padding="10dp"
+        android:layout_marginTop="@dimen/dp_385"
+        android:layout_marginBottom="@dimen/dp_53"
+        android:padding="@dimen/dp_10"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -120,48 +121,48 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="23sp"
+            android:textSize="@dimen/sp_23"
             android:textStyle="bold"
-            android:text="22, Delhi"/>
+            android:text="@string/_22_delhi"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
+            android:textSize="@dimen/sp_20"
             android:drawableStart="@drawable/ic_study"
-            android:drawablePadding="6dp"
-            android:layout_marginTop="4dp"
+            android:drawablePadding="@dimen/dp_5"
+            android:layout_marginTop="@dimen/dp_5"
             android:textColor="@color/appBlue"
-            android:text="Study"/>
+            android:text="@string/study"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
+            android:textSize="@dimen/sp_20"
             android:drawableStart="@drawable/ic_college_graduation"
-            android:drawablePadding="6dp"
-            android:layout_marginTop="4dp"
+            android:drawablePadding="@dimen/dp_5"
+            android:layout_marginTop="@dimen/dp_5"
             android:textColor="@color/appBlue"
-            android:text="delhi"/>
+            android:text="@string/delhi"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:layout_marginTop="30dp"
-            android:text="I am...."/>
+            android:textSize="@dimen/sp_20"
+            android:layout_marginTop="@dimen/dp_30"
+            android:text="@string/i_am"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:text="My WhatsApp 8881237654"/>
+            android:textSize="@dimen/sp_20"
+            android:text="@string/my_whatsapp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:textSize="20sp"
-            android:text="I like...."/>
+            android:layout_marginTop="@dimen/dp_20"
+            android:textSize="@dimen/sp_20"
+            android:text="@string/i_like"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:text="Study"/>
+            android:textSize="@dimen/sp_20"
+            android:text="@string/study"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

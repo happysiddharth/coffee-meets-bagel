@@ -8,57 +8,27 @@
     tools:context=".BirthdayDate">
 
     <TextView
-        android:id="@+id/tvSettle"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="80dp"
-        android:padding="10dp"
-        android:textStyle="bold"
-        android:text="Right on. When's your birthday"
-        android:textSize="31sp"
+        android:id="@+id/tvBirthDate"
+        style="@style/heading"
+        android:text="@string/text_birthday_heading"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:background="@color/white"
+        style="@style/back_arrow_btn"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/ic_baseline_arrow_back_24" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <CalendarView
-        android:id="@+id/calendarView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
+        style="@style/calender"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvSettle" />
+        app:layout_constraintTop_toBottomOf="@+id/tvBirthDate" />
 
     <Button
-        android:id="@+id/button4"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginRight="50dp"
-        android:layout_marginBottom="20dp"
-        android:textSize="20sp"
-        android:background="@drawable/rectangle_bg"
-        android:text="Next"
-        android:textAllCaps="false"
+        style="@style/btn"
+        android:text="@string/btn_next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

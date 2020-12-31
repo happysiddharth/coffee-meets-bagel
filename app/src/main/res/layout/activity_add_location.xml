@@ -8,44 +8,26 @@
     tools:context=".AddLocation">
 
     <TextView
-        android:id="@+id/tvSettle"
-        android:layout_width="match_parent"
-        android:layout_height="155dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="80dp"
-        android:textStyle="bold"
-        android:text="Do you live around here ? Let us set you up with people nearby so you can go on real dates."
-        android:textSize="31sp"
+        android:id="@+id/tvLocation"
+        style="@style/heading"
+        android:text="@string/text_location_heading"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button4"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginRight="50dp"
-        android:layout_marginBottom="25dp"
-        android:textSize="20sp"
-        android:background="@drawable/rectangle_bg"
-        android:text="Add my location"
-        android:textAllCaps="false"
+        style="@style/btn"
+        android:text="@string/btn_add_my_location"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <pl.droidsonroids.gif.GifImageView
-        android:layout_width="300dp"
-        android:layout_height="400dp"
+        android:layout_width="@dimen/dp_300"
+        android:layout_height="@dimen/dp_400"
         android:src="@drawable/location_gif"
-        app:layout_constraintBottom_toTopOf="@+id/button4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvSettle" />
+        app:layout_constraintTop_toBottomOf="@+id/tvLocation" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

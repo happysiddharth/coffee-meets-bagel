@@ -8,55 +8,47 @@
     tools:context=".Religion">
 
     <TextView
-        android:id="@+id/tvSettle"
-        android:layout_width="match_parent"
-        android:layout_height="65dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="50dp"
-        android:padding="10dp"
-        android:textStyle="bold"
-        android:text="What's your religion ?"
-        android:textSize="31sp"
+        style="@style/heading"
+        android:text="@string/text_religion"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:background="@color/white"
+        style="@style/back_arrow_btn"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/ic_baseline_arrow_back_24" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="120dp"
+        app:layout_constraintGuide_begin="@dimen/dp_120"
         />
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="30dp" />
+        app:layout_constraintGuide_begin="@dimen/dp_30"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="375dp" />
+        app:layout_constraintGuide_begin="@dimen/dp_375"/>
+    <Button
+        style="@style/btn"
+        android:text="@string/btn_next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ScrollView
-        android:layout_width="340dp"
-        android:layout_height="610dp"
+        android:layout_width="@dimen/dp_340"
+        android:layout_height="@dimen/dp_610"
         app:layout_constraintTop_toBottomOf="@+id/guideline1"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
@@ -64,7 +56,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="@dimen/dp_50"
             android:orientation="vertical" >
             <RelativeLayout
                 android:layout_width="wrap_content"
@@ -73,209 +65,192 @@
                     android:id="@+id/etA"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginEnd="20dp"
-                    android:padding="12dp"
-                    android:text="Buddhist"
-                    android:textSize="25sp"/>
+                    android:layout_marginStart="@dimen/dp_20"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:padding="@dimen/dp_12"
+                    android:text="@string/buddhist"
+                    android:textSize="@dimen/sp_25"/>
                 <RadioButton
                     android:id="@+id/etA1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="45dp"
+                    android:layout_marginTop="@dimen/dp_45"
                     android:checked="false"
-                    android:layout_marginHorizontal="270dp"/>
+                    android:layout_marginHorizontal="@dimen/dp_270"/>
                 <TextView
                     android:id="@+id/etB"
                     android:layout_below="@id/etA"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginEnd="20dp"
-                    android:padding="12dp"
-                    android:text="Christian"
-                    android:textSize="25sp"/>
+                    android:layout_marginStart="@dimen/dp_20"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:padding="@dimen/dp_12"
+                    android:text="@string/christian"
+                    android:textSize="@dimen/sp_25"/>
                 <RadioButton
                     android:id="@+id/etB1"
                     android:layout_below="@+id/etA1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="55dp"
+                    android:layout_marginTop="@dimen/dp_55"
                     android:checked="false"
-                    android:layout_marginHorizontal="270dp"/>
+                    android:layout_marginHorizontal="@dimen/dp_270"/>
                 <TextView
                     android:id="@+id/etC"
                     android:layout_below="@id/etB"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginEnd="20dp"
-                    android:padding="12dp"
-                    android:text="Catholic"
-                    android:textSize="23sp"/>
+                    android:layout_marginStart="@dimen/dp_20"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:padding="@dimen/dp_12"
+                    android:text="@string/catholic"
+                    android:textSize="@dimen/sp_25"/>
                 <RadioButton
                     android:id="@+id/etC1"
                     android:layout_below="@+id/etB1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="55dp"
+                    android:layout_marginTop="@dimen/dp_55"
                     android:checked="false"
-                    android:layout_marginHorizontal="270dp"/>
+                    android:layout_marginHorizontal="@dimen/dp_270"/>
                 <TextView
                     android:id="@+id/etD"
                     android:layout_below="@id/etC"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginEnd="20dp"
-                    android:padding="12dp"
-                    android:text="Hindu"
-                    android:textSize="25sp"/>
+                    android:layout_marginStart="@dimen/dp_20"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:padding="@dimen/dp_12"
+                    android:text="@string/hindu"
+                    android:textSize="@dimen/sp_25"/>
                 <RadioButton
                     android:id="@+id/etD1"
                     android:layout_below="@+id/etC1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="55dp"
+                    android:layout_marginTop="@dimen/dp_55"
                     android:checked="false"
-                    android:layout_marginHorizontal="270dp"/>
+                    android:layout_marginHorizontal="@dimen/dp_270"/>
                 <TextView
                     android:id="@+id/etE"
                     android:layout_below="@id/etD"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginEnd="20dp"
-                    android:padding="12dp"
-                    android:text="Jewish"
-                    android:textSize="25sp"/>
+                    android:layout_marginStart="@dimen/dp_20"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:padding="@dimen/dp_12"
+                    android:text="@string/jewish"
+                    android:textSize="@dimen/sp_25"/>
                 <RadioButton
                     android:id="@+id/etE1"
                     android:layout_below="@+id/etD1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="55dp"
+                    android:layout_marginTop="@dimen/dp_55"
                     android:checked="false"
-                    android:layout_marginHorizontal="270dp"/>
+                    android:layout_marginHorizontal="@dimen/dp_270"/>
                 <TextView
                     android:id="@+id/etF"
                     android:layout_below="@id/etE"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginEnd="20dp"
-                    android:padding="12dp"
-                    android:text="Muslim"
-                    android:textSize="25sp"/>
+                    android:layout_marginStart="@dimen/dp_20"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:padding="@dimen/dp_12"
+                    android:text="@string/muslim"
+                    android:textSize="@dimen/sp_25"/>
                 <RadioButton
                     android:id="@+id/etF1"
                     android:layout_below="@+id/etE1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="55dp"
+                    android:layout_marginTop="@dimen/dp_55"
                     android:checked="false"
-                    android:layout_marginHorizontal="270dp"/>
+                    android:layout_marginHorizontal="@dimen/dp_270"/>
                 <TextView
                     android:id="@+id/etG"
                     android:layout_below="@id/etF"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginEnd="20dp"
-                    android:padding="12dp"
-                    android:text="Sikh"
-                    android:textSize="25sp"/>
+                    android:layout_marginStart="@dimen/dp_20"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:padding="@dimen/dp_12"
+                    android:text="@string/sikh"
+                    android:textSize="@dimen/sp_25"/>
                 <RadioButton
                     android:id="@+id/etG1"
                     android:layout_below="@+id/etF1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="55dp"
+                    android:layout_marginTop="@dimen/dp_55"
                     android:checked="false"
-                    android:layout_marginHorizontal="270dp"/>
+                    android:layout_marginHorizontal="@dimen/dp_270"/>
                 <TextView
                     android:id="@+id/etH"
                     android:layout_below="@id/etG"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginEnd="20dp"
-                    android:padding="12dp"
-                    android:text="Shinto"
-                    android:textSize="25sp"/>
+                    android:layout_marginStart="@dimen/dp_20"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:padding="@dimen/dp_12"
+                    android:text="@string/shinto"
+                    android:textSize="@dimen/sp_25"/>
                 <RadioButton
                     android:id="@+id/etH1"
                     android:layout_below="@+id/etG1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="55dp"
+                    android:layout_marginTop="@dimen/dp_55"
                     android:checked="false"
-                    android:layout_marginHorizontal="270dp"/>
+                    android:layout_marginHorizontal="@dimen/dp_270"/>
                 <TextView
                     android:id="@+id/etI"
                     android:layout_below="@id/etH"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginEnd="20dp"
-                    android:padding="12dp"
-                    android:text="Zoroastrian"
-                    android:textSize="25sp"/>
+                    android:layout_marginStart="@dimen/dp_20"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:padding="@dimen/dp_12"
+                    android:text="@string/zoroastrian"
+                    android:textSize="@dimen/sp_25"/>
                 <RadioButton
                     android:id="@+id/etI1"
                     android:layout_below="@+id/etH1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="55dp"
+                    android:layout_marginTop="@dimen/dp_55"
                     android:checked="false"
-                    android:layout_marginHorizontal="270dp"/>
+                    android:layout_marginHorizontal="@dimen/dp_270"/>
                 <TextView
                     android:id="@+id/etJ"
                     android:layout_below="@id/etI"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginEnd="20dp"
-                    android:padding="12dp"
-                    android:textSize="25sp"/>
+                    android:layout_marginStart="@dimen/dp_20"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:padding="@dimen/dp_12"
+                    android:textSize="@dimen/sp_25"/>
             </RelativeLayout>
         </LinearLayout>
     </ScrollView>
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginRight="50dp"
-        android:layout_marginBottom="20dp"
-        android:textSize="20sp"
-        android:background="@drawable/rectangle_bg"
-        android:text="Next"
-        android:textAllCaps="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
