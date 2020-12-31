@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CoffeeMeetsBagel">
-        <activity android:name=".Suggested"></activity>
+        <activity android:name=".Discover"></activity>
+        <activity android:name=".Chats" />
+        <activity android:name=".LikesYou" />
+        <activity android:name=".Suggested" />
         <activity android:name=".Qualification" />
         <activity android:name=".SchoolName" />
         <activity android:name=".JobTitle" />
