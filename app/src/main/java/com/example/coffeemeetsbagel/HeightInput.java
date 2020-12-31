@@ -2,13 +2,14 @@ package com.example.coffeemeetsbagel;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
 public class HeightInput extends AppCompatActivity {
-    Button height1,height2,height3;
+    private Button height1,height2,height3,tonextpage;
     Button current;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,11 +41,19 @@ public class HeightInput extends AppCompatActivity {
                 current = height3;
             }
         });
+        tonextpage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),Ethnicity.class);
+                startActivity(intent);
+            }
+        });
 
     }
     private void init(){
         height1 = findViewById(R.id.height1);
         height2 = findViewById(R.id.height2);
         height3 = findViewById(R.id.height3);
+        tonextpage = findViewById(R.id.tonextpage);
     }
 }

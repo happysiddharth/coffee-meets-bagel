@@ -28,4 +28,7 @@
     <dimen name="sp_30">30sp</dimen>
     <dimen name="dp_120dp">120dp</dimen>
     <dimen name="dp_20">20dp</dimen>
+    <dimen name="sp_31">31sp</dimen>
+    <dimen name="do_4">4dp</dimen>
+    <dimen name="dp_39">39dp</dimen>
 </resources>

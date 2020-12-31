@@ -4,49 +4,88 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingLeft="@dimen/dp_20"
     tools:context=".JobTitle">
 
     <TextView
         android:id="@+id/tvReligion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_5"
         android:padding="10dp"
-        android:textStyle="bold"
         android:text="What's your job title ?"
         android:textSize="31sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline12" />
+
+    <ImageButton
+        android:id="@+id/jobTitleBackBtn"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:background="@color/white"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintBottom_toTopOf="@+id/guideline12"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:background="@color/white"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/ic_baseline_arrow_back_24" />
+        app:layout_constraintVertical_bias="0.432" />
 
     <EditText
         android:id="@+id/editTextTextPersonName"
-        android:layout_width="match_parent"
+        android:layout_width="328dp"
         android:layout_height="70dp"
         android:layout_marginStart="30dp"
-        android:layout_marginLeft="35dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginLeft="@dimen/dp_39"
+        android:layout_marginTop="@dimen/do_4"
         android:layout_marginEnd="35dp"
         android:layout_marginRight="35dp"
-        android:background="@drawable/rectangle2_bg"
+        android:background="@android:color/transparent"
         android:ems="10"
+        android:hint="@string/e_g_investment_banker"
+        android:paddingLeft="@dimen/dp_5"
         android:textSize="25sp"
-        android:hint="    e.g. Investment Banker"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvReligion" />
+        app:layout_constraintTop_toBottomOf="@+id/tvReligion"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="67dp" />
+
+    <Button
+        android:id="@+id/jobTitleNextBtn"
+        android:layout_width="324dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/next_btn_enable"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        app:layout_constraintVertical_bias="0.927" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

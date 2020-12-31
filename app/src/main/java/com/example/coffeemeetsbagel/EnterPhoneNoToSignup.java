@@ -15,7 +15,7 @@ import android.widget.ImageView;
 import android.widget.ListAdapter;
 
 public class EnterPhoneNoToSignup extends AppCompatActivity {
-    private ImageView backtoprevious;
+    private ImageView backtoprevious,nextArrowPhoneNumber;
     private Button getStartedBtn;
     private EditText phoneNumber;
     private Intent otpPage;
@@ -45,6 +45,7 @@ public class EnterPhoneNoToSignup extends AppCompatActivity {
                     otpPage.putExtra("phone",s.toString());
                     otpPage.putExtra("country_code","+91");
                     getStartedBtn.setBackground(getDrawable(R.drawable.next_btn_enable));
+                    nextArrowPhoneNumber.setImageResource(R.drawable.ic_baseline_arrow_right_alt_24);
                     getStartedBtn.setTextColor(getResources().getColor(R.color.white));
                     Log.d("Tags",String.valueOf(s.toString().length()));
                     String onlyNumberRegex = "^[0-9]*$";
@@ -52,6 +53,12 @@ public class EnterPhoneNoToSignup extends AppCompatActivity {
                         getStartedBtn.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View view) {
+                                startActivity(otpPage);
+                            }
+                        });
+                        nextArrowPhoneNumber.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
                                 startActivity(otpPage);
                             }
                         });
@@ -69,6 +76,9 @@ public class EnterPhoneNoToSignup extends AppCompatActivity {
                     getStartedBtn.setOnClickListener(null);
                     getStartedBtn.setBackground(getDrawable(R.drawable.rectangle_bg));
                     getStartedBtn.setTextColor(R.color.darkgrey);
+                    nextArrowPhoneNumber.setImageResource(R.drawable.ic_right_arrow);
+                    nextArrowPhoneNumber.setOnClickListener(null);
+
                 }
             }
         });
@@ -78,5 +88,6 @@ public class EnterPhoneNoToSignup extends AppCompatActivity {
         getStartedBtn = findViewById(R.id.btnEnterphno);
         backtoprevious = findViewById(R.id.backToPrevious);
         phoneNumber = findViewById(R.id.rect2v);
+        nextArrowPhoneNumber = findViewById(R.id.nextArrowPhoneNumber);
     }
 }

@@ -24,7 +24,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/ethnicityPrevious"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -89,7 +89,7 @@
         app:layout_constraintTop_toTopOf="@+id/textView6" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/regliNext"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="50dp"

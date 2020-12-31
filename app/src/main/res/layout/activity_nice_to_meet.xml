@@ -12,6 +12,7 @@
         android:layout_height="127dp"
         android:gravity="start"
         android:padding="@dimen/dp_10"
+        android:textStyle="bold"
         android:text="@string/nicetomeet_text"
         android:textColor="@color/blacklight"
         android:textSize="@dimen/sp_30"

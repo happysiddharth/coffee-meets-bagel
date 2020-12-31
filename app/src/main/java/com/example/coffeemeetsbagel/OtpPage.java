@@ -19,7 +19,7 @@ import java.util.TimerTask;
 
 public class OtpPage extends AppCompatActivity {
     private Button OtpPageBtnClick;
-    private ImageView goToPreviousPage;
+    private ImageView goToPreviousPage,nextArrow;
     private TextView phonenumber, count, resendOtp;
     private int c = 30;
     private EditText otp1, otp2, otp3, otp4;
@@ -163,6 +163,7 @@ public class OtpPage extends AppCompatActivity {
 
                             }
                         });
+                        nextArrow.setImageResource(R.drawable.ic_baseline_arrow_right_alt_24);
                         OtpPageBtnClick.setTextColor(getResources().getColor(R.color.white));
                         OtpPageBtnClick.setBackground(getResources().getDrawable(R.drawable.next_btn_enable));
 
@@ -186,7 +187,7 @@ public class OtpPage extends AppCompatActivity {
 
     private void init() {
         OtpPageBtnClick = findViewById(R.id.OtppageBtn);
-
+        nextArrow = findViewById(R.id.nextArrow);
         phonenumber = findViewById(R.id.phonenumber);
         count = findViewById(R.id.counterText);
         resendOtp = findViewById(R.id.resendOtp);
