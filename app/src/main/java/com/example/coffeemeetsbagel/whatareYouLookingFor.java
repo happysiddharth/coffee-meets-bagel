@@ -96,7 +96,7 @@ public class whatareYouLookingFor extends AppCompatActivity {
         within2years =  (RadioButton)findViewById(R.id.women);
         morethantwoyears =  (RadioButton)findViewById(R.id.morethantwoyears);
         notsure =  (RadioButton)findViewById(R.id.notsure);
-        nextBtn =  findViewById(R.id.nextBtn);
+        nextBtn =  findViewById(R.id.nextPageBtn);
         backToPrevious = findViewById(R.id.backToPrevious);
     }
 }

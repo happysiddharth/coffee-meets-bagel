@@ -10,8 +10,6 @@ import android.widget.Button;
 import android.widget.CalendarView;
 import android.widget.ImageButton;
 
-import java.util.Calendar;
-
 public class BirthdayDate extends AppCompatActivity {
     private CalendarView calendar;
     private Button nextBtn;
@@ -49,7 +47,7 @@ public class BirthdayDate extends AppCompatActivity {
     }
     private void init(){
         calendar = findViewById(R.id.calendarView);
-        nextBtn = findViewById(R.id.nextBtn);
+        nextBtn = findViewById(R.id.nextPageBtn);
         prevousPageImgBtn = findViewById(R.id.prevousPageImgBtn);
     }
 }

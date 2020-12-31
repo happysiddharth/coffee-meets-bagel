@@ -2,13 +2,15 @@ package com.example.coffeemeetsbagel;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
+import android.widget.ImageView;
 
 public class uploadPhotoToIntroduce extends AppCompatActivity {
-    private ImageButton prevoiusBtn;
+    private ImageView prevoiusBtn;
+    private Button nextBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,9 +22,17 @@ public class uploadPhotoToIntroduce extends AppCompatActivity {
                 finish();
             }
         });
+        nextBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),HoldToReloadPage.class);
+                startActivity(intent);
+            }
+        });
     }
     private void init(){
-        prevoiusBtn = findViewById(R.id.prevousPageImgBtn);
+        prevoiusBtn = findViewById(R.id.prevoiusBtn);
+        nextBtn = findViewById(R.id.nextPage);
 
     }
 }

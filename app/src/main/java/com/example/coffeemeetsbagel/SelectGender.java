@@ -77,7 +77,7 @@ public class SelectGender extends AppCompatActivity {
         man =  (RadioButton)findViewById(R.id.man);
         women =  (RadioButton)findViewById(R.id.women);
 
-        nextBtn =  findViewById(R.id.nextBtn);
+        nextBtn =  findViewById(R.id.nextPageBtn);
         backToPrevious = findViewById(R.id.backToPrevious);
     }
 }

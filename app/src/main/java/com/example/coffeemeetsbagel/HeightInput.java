@@ -1,0 +1,50 @@
+package com.example.coffeemeetsbagel;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.graphics.Typeface;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
+public class HeightInput extends AppCompatActivity {
+    Button height1,height2,height3;
+    Button current;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_height_input);
+        init();
+        current= height2;
+        height1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                height1.setTypeface(height1.getTypeface(), Typeface.BOLD);
+                current.setTypeface(current.getTypeface(), Typeface.ITALIC);
+                current = height1;
+            }
+        });
+        height2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                height2.setTypeface(height2.getTypeface(), Typeface.BOLD);
+                current.setTypeface(current.getTypeface(), Typeface.ITALIC);
+                current = height2;
+            }
+        });
+        height3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                height3.setTypeface(height3.getTypeface(), Typeface.BOLD);
+                current.setTypeface(current.getTypeface(), Typeface.ITALIC);
+                current = height3;
+            }
+        });
+
+    }
+    private void init(){
+        height1 = findViewById(R.id.height1);
+        height2 = findViewById(R.id.height2);
+        height3 = findViewById(R.id.height3);
+    }
+}
