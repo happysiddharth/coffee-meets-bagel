@@ -12,7 +12,7 @@ import android.widget.ImageView;
 public class HeightInput extends AppCompatActivity {
     private Button height1,height2,height3,tonextpage;
     Button current;
-    private ImageView backfromHeight
+    private ImageView backfromHeight;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
