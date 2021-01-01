@@ -7,11 +7,11 @@
     tools:context=".AnsweringQuestion">
 
     <TextView
-        android:layout_width="277dp"
-        android:layout_height="178dp"
+        android:layout_width="@dimen/dp_271"
+        android:layout_height="@dimen/dp_178"
         android:text="@string/answering_text"
-        android:textColor="@color/blacklight"
-        android:textSize="@dimen/sp_25"
+
+        android:textSize="@dimen/sp_31"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

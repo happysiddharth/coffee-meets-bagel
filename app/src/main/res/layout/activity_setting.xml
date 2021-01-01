@@ -7,7 +7,7 @@
     tools:context=".Setting">
 
     <ImageView
-        android:id="@+id/iVSetting"
+        android:id="@+id/backtoPrevoiousFromSettings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/dp_35"
@@ -17,14 +17,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/Tvsetting1"
+        android:id="@+id/backBtnSettingsPage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/settings"
         android:textSize="@dimen/sp_20"
 
-        app:layout_constraintTop_toTopOf="@id/iVSetting" />
+        app:layout_constraintTop_toTopOf="@id/backtoPrevoiousFromSettings" />
 
     <View
         android:id="@+id/mainViewSetting"
@@ -33,7 +33,7 @@
         android:layout_marginTop="@dimen/dp_25"
         android:layout_marginBottom="@dimen/dp_25"
         android:background="@color/light"
-        app:layout_constraintTop_toBottomOf="@id/iVSetting" />
+        app:layout_constraintTop_toBottomOf="@id/backtoPrevoiousFromSettings" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineSetting2"
@@ -236,7 +236,7 @@
         app:layout_constraintTop_toBottomOf="@id/TvSetting9"
         android:background="@color/tinygrey"/>
     <TextView
-        android:id="@+id/TvSetting10"
+        android:id="@+id/backBtnSettingsPage0"
         android:layout_marginTop="@dimen/dp_10"
         android:layout_marginBottom="@dimen/dp_10"
         android:layout_width="wrap_content"
@@ -253,10 +253,10 @@
         android:layout_marginTop="@dimen/dp_10"
         app:layout_constraintStart_toStartOf="@id/guidelineSetting1"
         app:layout_constraintEnd_toEndOf="@id/guidelineSetting2"
-        app:layout_constraintTop_toBottomOf="@id/TvSetting10"
+        app:layout_constraintTop_toBottomOf="@id/backBtnSettingsPage0"
         android:background="@color/tinygrey"/>
     <TextView
-        android:id="@+id/TvSetting11"
+        android:id="@+id/backBtnSettingsPage1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="@id/guidelineSetting1"
@@ -273,10 +273,10 @@
         android:layout_marginTop="@dimen/dp_5"
         app:layout_constraintStart_toStartOf="@id/guidelineSetting1"
         app:layout_constraintEnd_toEndOf="@id/guidelineSetting2"
-        app:layout_constraintTop_toBottomOf="@id/TvSetting11"
+        app:layout_constraintTop_toBottomOf="@id/backBtnSettingsPage1"
         android:background="@color/tinygrey"/>
     <TextView
-        android:id="@+id/TvSetting12"
+        android:id="@+id/backBtnSettingsPage2"
         android:layout_marginTop="@dimen/dp_10"
         android:layout_marginBottom="@dimen/dp_10"
         android:layout_width="wrap_content"
@@ -293,10 +293,10 @@
         android:layout_marginTop="@dimen/dp_10"
         app:layout_constraintStart_toStartOf="@id/guidelineSetting1"
         app:layout_constraintEnd_toEndOf="@id/guidelineSetting2"
-        app:layout_constraintTop_toBottomOf="@id/TvSetting12"
+        app:layout_constraintTop_toBottomOf="@id/backBtnSettingsPage2"
         android:background="@color/tinygrey"/>
     <TextView
-        android:id="@+id/TvSetting13"
+        android:id="@+id/backBtnSettingsPage3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="@id/guidelineSetting1"
@@ -313,7 +313,7 @@
         android:layout_height="@dimen/dp_35"
         app:layout_constraintStart_toStartOf="@id/guidelineSetting1"
         app:layout_constraintEnd_toEndOf="@id/guidelineSetting2"
-        app:layout_constraintTop_toBottomOf="@id/TvSetting13"
+        app:layout_constraintTop_toBottomOf="@id/backBtnSettingsPage3"
         android:orientation="horizontal"
         android:weightSum="2"
         android:background="@drawable/rectanglesetting">
@@ -346,7 +346,7 @@
         app:layout_constraintTop_toBottomOf="@id/linear"
         android:background="@color/tinygrey"/>
     <Button
-        android:id="@+id/BtnSetting"
+        android:id="@+id/logoutBtn"
         android:layout_width="0dp"
         android:layout_height="@dimen/dp_40"
         app:layout_constraintTop_toBottomOf="@id/V12"
@@ -366,7 +366,7 @@
         android:layout_marginTop="@dimen/dp_10"
         app:layout_constraintStart_toStartOf="@id/guidelineSetting1"
         app:layout_constraintEnd_toEndOf="@id/guidelineSetting2"
-        app:layout_constraintTop_toBottomOf="@id/BtnSetting"
+        app:layout_constraintTop_toBottomOf="@id/logoutBtn"
         android:background="@color/tinygrey"/>
     <TextView
         android:layout_width="match_parent"

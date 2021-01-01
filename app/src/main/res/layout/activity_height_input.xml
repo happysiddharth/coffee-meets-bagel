@@ -5,25 +5,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HeightInput">
+
     <ImageView
-        android:id="@+id/iVTall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:src="@drawable/ic_backblue_"
+        android:id="@+id/backfromHeight"
+        android:layout_width="21dp"
+        android:layout_height="12dp"
+        android:layout_marginLeft="@dimen/dp_35"
         android:layout_marginTop="@dimen/dp_50"
-        android:layout_marginLeft="@dimen/dp_35"/>
+        android:src="@drawable/ic_backblue_"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
     <TextView
         android:id="@+id/Tvtall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_31"
         android:textStyle="bold"
         android:layout_marginTop="@dimen/dp_35"
-        app:layout_constraintLeft_toRightOf="@id/iVTall"
-        android:textSize="@dimen/sp_25"
-        android:textColor="@color/blacklight"
-        app:layout_constraintTop_toBottomOf="@id/iVTall"
+        app:layout_constraintLeft_toRightOf="@id/backfromHeight"
+
+
+        app:layout_constraintTop_toBottomOf="@id/backfromHeight"
         android:text="@string/how_tall_are_you"/>
     <Button
         android:textAllCaps="false"
@@ -88,7 +90,7 @@ android:textStyle="italic"
         app:layout_constraintTop_toBottomOf="@id/height3"/>
 
     <Button
-        android:id="@+id/Btnheight"
+        android:id="@+id/tonextpage"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp_60"
         android:layout_margin="@dimen/dp_25"

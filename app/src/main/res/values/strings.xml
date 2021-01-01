@@ -78,7 +78,6 @@
                                 what you love to do</string>
     <string name="upload_text4">No sunglasses or big hats,<br />
                                 playing mesterious is out</string>
-    <string name="next">Next</string>
     <!--holdToReload page-->
     <string name="done">Done</string>
     <string name="hold_to_reorder_tap_to_edit">Hold to reorder.Tap to Edit</string>
@@ -102,6 +101,20 @@
     <string name="privacy_terms_of_services">Privacy terms of Services</string>
     <string name="licences">Licences</string>
     <string name="help">Help</string>
+    <string name="mba">MBA</string>
+    <string name="write_something">Write something...</string>
+    <string name="e_g_investment_banker">e.g. Investment Banker</string>
+    <string name="i_am_18_i_love_playing_casio">I am 18 ,i love playing casio.</string>
+    <string name="_22_delhi">22, Delhi</string>
+    <string name="study">Study</string>
+    <string name="suggested">Suggested</string>
+    <string name="do_you_live_around_here_lets_us_set_you_up_with_people_nearby_so_you_can_go_on_real_dates">Do you live around here? Lets us set you up with people nearby so you can go on real dates</string>
+    <string name="next">Next</string>
+    <string name="sorry_no_one_found_at_our_location_to_discover">Sorry! no one found at our location to discover.</string>
+    <string name="asian">Asian</string>
+    <string name="arab">Arab</string>
+    <string name="pacific_islander">Pacific Islander</string>
+    <string name="south_asian">South Asian</string>
 
 
 </resources>

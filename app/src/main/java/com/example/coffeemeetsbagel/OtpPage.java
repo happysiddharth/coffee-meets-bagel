@@ -19,7 +19,7 @@ import java.util.TimerTask;
 
 public class OtpPage extends AppCompatActivity {
     private Button OtpPageBtnClick;
-    private ImageView goToPreviousPage;
+    private ImageView goToPreviousPage,nextArrow;
     private TextView phonenumber, count, resendOtp;
     private int c = 30;
     private EditText otp1, otp2, otp3, otp4;
@@ -160,9 +160,21 @@ public class OtpPage extends AppCompatActivity {
                                 }else {
                                     otp4.setError("Wrong Otp");
                                 }
+                            }
 
+                        });
+                        nextArrow.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                Intent introStep1 = new Intent(OtpPage.this, IntroStep1.class);
+                                if (one==defaultPassword.charAt(0) && two==defaultPassword.charAt(1) &&three==defaultPassword.charAt(2) &&four==defaultPassword.charAt(3) ){
+                                    startActivity(introStep1);
+                                }else {
+                                    otp4.setError("Wrong Otp");
+                                }
                             }
                         });
+                        nextArrow.setImageResource(R.drawable.ic_baseline_arrow_right_alt_24);
                         OtpPageBtnClick.setTextColor(getResources().getColor(R.color.white));
                         OtpPageBtnClick.setBackground(getResources().getDrawable(R.drawable.next_btn_enable));
 
@@ -186,7 +198,7 @@ public class OtpPage extends AppCompatActivity {
 
     private void init() {
         OtpPageBtnClick = findViewById(R.id.OtppageBtn);
-
+        nextArrow = findViewById(R.id.nextArrow);
         phonenumber = findViewById(R.id.phonenumber);
         count = findViewById(R.id.counterText);
         resendOtp = findViewById(R.id.resendOtp);

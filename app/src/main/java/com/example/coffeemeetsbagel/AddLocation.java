@@ -27,7 +27,7 @@ public class AddLocation extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Log.d("Tagss","w");
-                Intent intent = new Intent(getApplicationContext(),cmbDaters.class);
+                Intent intent = new Intent(getApplicationContext(),PreviouslyDated.class);
                 startActivity(intent);
             }
         });

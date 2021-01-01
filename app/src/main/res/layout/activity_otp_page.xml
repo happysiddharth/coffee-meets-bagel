@@ -20,7 +20,7 @@
         tools:ignore="ContentDescription,RtlHardcoded" />
 
     <ImageView
-
+        android:id="@+id/nextArrow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/dp_15"
@@ -102,7 +102,7 @@
     <LinearLayout
         android:id="@+id/Tvotpmessage"
         android:layout_width="400dp"
-        android:layout_height="130dp"
+        android:layout_height="@dimen/dp_50"
         android:layout_marginLeft="4dp"
         android:layout_marginTop="4dp"
         android:orientation="horizontal"
@@ -115,7 +115,7 @@
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dp_50"
+            android:layout_marginTop="0dp"
             android:gravity="center"
             android:text="@string/otp_timing" />
 
@@ -123,7 +123,7 @@
             android:id="@+id/phonenumber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dp_50"
+            android:layout_marginTop="0dp"
             android:gravity="center"
             android:text=" +91 9045426913" />
 
@@ -131,8 +131,10 @@
             android:id="@+id/counterText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dp_50"
+            android:layout_marginTop="0dp"
             android:gravity="center"
+
+
             android:text=" within 29 sec." />
 
 
