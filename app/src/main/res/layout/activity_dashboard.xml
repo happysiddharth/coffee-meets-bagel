@@ -8,8 +8,9 @@
     tools:context=".Dashboard">
 
     <ImageView
+        android:scaleType="fitXY"
         android:id="@+id/imageView4"
-        android:layout_width="@dimen/dp_385"
+        android:layout_width="match_parent"
         android:layout_height="@dimen/dp_62"
         android:layout_marginBottom="@dimen/dp_8"
         app:layout_constraintBottom_toTopOf="@+id/guideline15"
@@ -145,7 +146,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:scaleType="fitXY"
-                app:srcCompat="@drawable/scarlett" />
+                app:srcCompat="@drawable/scarlett2" />
 
             <ImageView
                 android:id="@+id/imageView9"
@@ -153,7 +154,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:scaleType="fitXY"
-                app:srcCompat="@drawable/scarlett" />
+                app:srcCompat="@drawable/scarlett3" />
 
         </LinearLayout>
     </HorizontalScrollView>
