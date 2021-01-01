@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MyProfile extends AppCompatActivity {
 
-    private Button settingBtn;
+    private Button settingBtn,backtoPreviousPage;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,8 +22,15 @@ public class MyProfile extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        backtoPreviousPage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
     private void init(){
         settingBtn = findViewById(R.id.settings);
+        backtoPreviousPage = findViewById(R.id.backtoPreviousPage);
     }
 }

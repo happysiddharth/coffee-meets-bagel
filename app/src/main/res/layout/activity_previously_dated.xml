@@ -24,14 +24,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/ethnicityPrevious"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/backFromPrevousDated"
+        android:layout_width="59dp"
+        android:layout_height="59dp"
         android:layout_margin="10dp"
         android:background="@color/white"
+        android:src="@drawable/ic_baseline_arrow_back_24"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/ic_baseline_arrow_back_24" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView5"
@@ -91,7 +91,7 @@
         app:layout_constraintTop_toTopOf="@+id/textView6" />
 
     <Button
-        android:id="@+id/regliNext"
+        android:id="@+id/nexFromPrevoislyDated"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="50dp"

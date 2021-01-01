@@ -10,12 +10,12 @@
 
     <TextView
         android:id="@+id/tvSettle"
-        android:layout_width="346dp"
-        android:layout_height="68dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="68dp"
-        android:padding="10dp"
+        android:layout_width="@dimen/do_346"
+        android:layout_height="@dimen/dp_68"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_68"
+        android:padding="@dimen/dp_10"
         android:text="What's your ethnicity ?"
         android:textSize="@dimen/sp_31"
         android:textStyle="bold"
@@ -26,11 +26,11 @@
 
     <ImageButton
         android:id="@+id/ethnicityPrevious"
-        android:layout_width="53dp"
-        android:layout_height="49dp"
-        android:layout_margin="10dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
+        android:layout_width="@dimen/dp_53"
+        android:layout_height="@dimen/dp_49"
+        android:layout_margin="@dimen/dp_10"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginLeft="@dimen/dp_16"
         android:layout_marginTop="@dimen/dp_20"
         android:background="@color/white"
         android:src="@drawable/ic_baseline_arrow_back_24"
@@ -60,8 +60,8 @@
         app:layout_constraintGuide_begin="375dp" />
 
     <ScrollView
-        android:layout_width="336dp"
-        android:layout_height="552dp"
+        android:layout_width="@dimen/dp_336"
+        android:layout_height="@dimen/dp_522"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
@@ -80,20 +80,20 @@
                     android:id="@+id/etA"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="@dimen/dp_20"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:layout_marginEnd="@dimen/dp_20"
                     android:padding="12dp"
-                    android:text="Asian"
+                    android:text="@string/asian"
                     android:textSize="25sp" />
 
                 <RadioButton
                     android:id="@+id/asian"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="270dp"
-                    android:layout_marginTop="45dp"
+                    android:layout_marginHorizontal="@dimen/dp_270"
+                    android:layout_marginTop="@dimen/dp_45"
                     android:checked="false" />
 
                 <TextView
@@ -101,13 +101,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/etA"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginEnd="20dp"
-                    android:padding="12dp"
-                    android:text="Arab"
-                    android:textSize="25sp" />
+                    android:layout_marginStart="@dimen/dp_20"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:padding="@dimen/dp_12"
+                    android:text="@string/arab"
+                    android:textSize="@dimen/sp_25" />
 
                 <RadioButton
                     android:id="@+id/arab"
@@ -115,7 +115,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/asian"
                     android:layout_marginHorizontal="270dp"
-                    android:layout_marginTop="55dp"
+                    android:layout_marginTop="@dimen/dp_55"
                     android:checked="false" />
 
                 <TextView
@@ -123,13 +123,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/etB"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginEnd="20dp"
-                    android:padding="12dp"
+                    android:layout_marginStart="@dimen/dp_20"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:padding="@dimen/dp_12"
                     android:text="Black/African descent"
-                    android:textSize="23sp" />
+                    android:textSize="@dimen/dp_23" />
 
                 <RadioButton
                     android:id="@+id/black"
@@ -137,7 +137,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/arab"
                     android:layout_marginHorizontal="270dp"
-                    android:layout_marginTop="55dp"
+                    android:layout_marginTop="@dimen/dp_55"
                     android:checked="false" />
 
                 <TextView
@@ -145,13 +145,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/etC"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginEnd="20dp"
-                    android:padding="12dp"
+                    android:layout_marginStart="@dimen/dp_20"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:padding="@dimen/dp_12"
                     android:text="Hispanic/Latino"
-                    android:textSize="25sp" />
+                    android:textSize="@dimen/sp_25" />
 
                 <RadioButton
                     android:id="@+id/hispanic"
@@ -159,7 +159,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/black"
                     android:layout_marginHorizontal="270dp"
-                    android:layout_marginTop="55dp"
+                    android:layout_marginTop="@dimen/dp_55"
                     android:checked="false" />
 
                 <TextView
@@ -181,7 +181,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/hispanic"
                     android:layout_marginHorizontal="270dp"
-                    android:layout_marginTop="55dp"
+                    android:layout_marginTop="@dimen/dp_55"
                     android:checked="false" />
 
                 <TextView
@@ -189,13 +189,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/etE"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginEnd="20dp"
-                    android:padding="12dp"
-                    android:text="Pacific Islander"
-                    android:textSize="25sp" />
+                    android:layout_marginStart="@dimen/dp_20"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:layout_marginEnd="@dimen/dp_20"
+                    android:padding="@dimen/dp_12"
+                    android:text="@string/pacific_islander"
+                    android:textSize="@dimen/sp_25" />
 
                 <RadioButton
                     android:id="@+id/pacificIslander"
@@ -203,7 +203,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/nativeAmerican"
                     android:layout_marginHorizontal="270dp"
-                    android:layout_marginTop="55dp"
+                    android:layout_marginTop="@dimen/dp_55"
                     android:checked="false" />
 
                 <TextView
@@ -211,12 +211,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/etF"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="@dimen/dp_20"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:layout_marginEnd="@dimen/dp_20"
                     android:padding="12dp"
-                    android:text="South Asian"
+                    android:text="@string/south_asian"
                     android:textSize="25sp" />
 
                 <RadioButton
@@ -225,7 +225,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/pacificIslander"
                     android:layout_marginHorizontal="270dp"
-                    android:layout_marginTop="55dp"
+                    android:layout_marginTop="@dimen/dp_55"
                     android:checked="false" />
 
                 <TextView
@@ -247,7 +247,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/southAsian"
                     android:layout_marginHorizontal="270dp"
-                    android:layout_marginTop="55dp"
+                    android:layout_marginTop="@dimen/dp_55"
                     android:checked="false" />
 
                 <TextView
@@ -269,7 +269,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/white"
                     android:layout_marginHorizontal="270dp"
-                    android:layout_marginTop="55dp"
+                    android:layout_marginTop="@dimen/dp_55"
                     android:checked="false" />
 
                 <TextView

@@ -7,10 +7,12 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class HeightInput extends AppCompatActivity {
     private Button height1,height2,height3,tonextpage;
     Button current;
+    private ImageView backfromHeight
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,6 +50,12 @@ public class HeightInput extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        backfromHeight.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+              finish();
+            }
+        });
 
     }
     private void init(){
@@ -55,5 +63,6 @@ public class HeightInput extends AppCompatActivity {
         height2 = findViewById(R.id.height2);
         height3 = findViewById(R.id.height3);
         tonextpage = findViewById(R.id.tonextpage);
+        backfromHeight = findViewById(R.id.backfromHeight);
     }
 }

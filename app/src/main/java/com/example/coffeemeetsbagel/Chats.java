@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class Chats extends AppCompatActivity {
-    private Button suggestedPage,likePage,discoverPage;
+    private Button suggestedPage,likePage,discoverPage,toProfileFromChatpage,toshopFromChat;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,11 +36,27 @@ public class Chats extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        toProfileFromChatpage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),Discover.class);
+                startActivity(intent);
+            }
+        });
+        toshopFromChat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),Shop.class);
+                startActivity(intent);
+            }
+        });
     }
     private void init(){
         suggestedPage = findViewById(R.id.suggestedPage);
         likePage = findViewById(R.id.likePageBtninChatActivity);
         discoverPage = findViewById(R.id.discoverBtninChatActivity);
+        toProfileFromChatpage = findViewById(R.id.toProfileFromChatpage);
+        toshopFromChat = findViewById(R.id.toshopFromChat);
 
 
     }

@@ -29,7 +29,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="64dp" />
+        app:layout_constraintGuide_begin="60dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline23"
@@ -39,7 +39,7 @@
         app:layout_constraintGuide_begin="340dp" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/backtoPreviousPage"
         android:layout_width="57dp"
         android:layout_height="62dp"
         android:background="@android:color/transparent"
@@ -98,11 +98,49 @@
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
-            <ImageView
-                android:id="@+id/imageView13"
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="246dp"
-                app:srcCompat="@drawable/profile_middle" />
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView13"
+                        android:layout_width="242dp"
+                        android:layout_height="145dp"
+                        app:srcCompat="@drawable/document_add" />
+
+                    <TextView
+                        android:id="@+id/textView28"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="This is your chance to make first great impression"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView29"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="We'll even help you get ing started with example answer."
+                        android:textSize="16dp" />
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:background="@drawable/next_btn_enable"
+                        android:text="Get started"
+                        android:textAllCaps="false" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,8 +7,8 @@
     tools:context=".AnsweringQuestion">
 
     <TextView
-        android:layout_width="277dp"
-        android:layout_height="178dp"
+        android:layout_width="@dimen/dp_271"
+        android:layout_height="@dimen/dp_178"
         android:text="@string/answering_text"
 
         android:textSize="@dimen/sp_31"

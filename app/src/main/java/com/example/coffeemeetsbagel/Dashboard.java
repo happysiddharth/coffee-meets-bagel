@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 public class Dashboard extends AppCompatActivity {
-    private Button chatBtn,discoverBtn,likesYouBtn,profileBtn;
+    private Button chatBtn,discoverBtn,likesYouBtn,profileBtn,shopDashboard;
     private ImageView chatImg,likeImage;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +59,13 @@ public class Dashboard extends AppCompatActivity {
              startActivity(intent);
             }
         });
+        shopDashboard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),Shop.class);
+                startActivity(intent);
+            }
+        });
 
     }
     private void init(){
@@ -68,5 +75,6 @@ public class Dashboard extends AppCompatActivity {
         likesYouBtn = findViewById(R.id.likesYouBtn);
         profileBtn = findViewById(R.id.profileBtn);
         likeImage = findViewById(R.id.likeImageView);
+        shopDashboard = findViewById(R.id.shopDashboard);
     }
 }

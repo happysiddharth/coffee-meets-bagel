@@ -7,14 +7,14 @@
     tools:context=".cmbDaters">
 
     <ImageView
-        android:id="@+id/prevoiusBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:src="@drawable/ic_backblue_"
+        android:id="@+id/backFromcmbDaters"
+        android:layout_width="@dimen/dp_11"
+        android:layout_height="@dimen/dp_18"
+        android:layout_marginLeft="@dimen/dp_25"
         android:layout_marginTop="@dimen/dp_35"
-        android:layout_marginLeft="@dimen/dp_25"/>
+        android:src="@drawable/ic_backblue_"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/TVcmbDaters1"
@@ -23,11 +23,11 @@
         android:layout_margin="@dimen/dp_35"
         android:text="@string/daters_Text"
         android:textColor="@color/blacklight"
-        android:textSize="31sp"
+        android:textSize="@dimen/sp_31"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintLeft_toRightOf="@id/prevoiusBtn"
-        app:layout_constraintTop_toBottomOf="@id/prevoiusBtn" />
+        app:layout_constraintLeft_toRightOf="@id/backFromcmbDaters"
+        app:layout_constraintTop_toBottomOf="@id/backFromcmbDaters" />
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -41,11 +41,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/dp_35"
-        android:layout_marginLeft="28dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:layout_marginBottom="358dp"
+        android:layout_marginLeft="@dimen/dp_28"
+        android:layout_marginTop="@dimen/dp_48"
+        android:layout_marginEnd="@dimen/pd_32"
+        android:layout_marginRight="@dimen/pd_32"
+        android:layout_marginBottom="@dimen/dp_358"
         android:text="@string/daters_Text2"
 
         android:textSize="31sp"

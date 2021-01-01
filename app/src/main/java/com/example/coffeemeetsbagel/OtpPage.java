@@ -160,7 +160,18 @@ public class OtpPage extends AppCompatActivity {
                                 }else {
                                     otp4.setError("Wrong Otp");
                                 }
+                            }
 
+                        });
+                        nextArrow.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                Intent introStep1 = new Intent(OtpPage.this, IntroStep1.class);
+                                if (one==defaultPassword.charAt(0) && two==defaultPassword.charAt(1) &&three==defaultPassword.charAt(2) &&four==defaultPassword.charAt(3) ){
+                                    startActivity(introStep1);
+                                }else {
+                                    otp4.setError("Wrong Otp");
+                                }
                             }
                         });
                         nextArrow.setImageResource(R.drawable.ic_baseline_arrow_right_alt_24);

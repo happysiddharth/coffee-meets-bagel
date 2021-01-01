@@ -23,7 +23,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline14" />
 
     <ImageButton
-        android:id="@+id/ethnicityPrevious"
+        android:id="@+id/backfromprevious"
         android:layout_width="59dp"
         android:layout_height="41dp"
         android:layout_margin="10dp"
