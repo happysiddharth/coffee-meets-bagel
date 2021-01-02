@@ -15,6 +15,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/top_nav_for_profile_page" />
 
     <androidx.constraintlayout.widget.Guideline
@@ -22,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="89dp" />
+        app:layout_constraintGuide_begin="68dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline31"
@@ -59,8 +60,9 @@
         app:layout_constraintGuide_begin="673dp" />
 
     <ScrollView
-        android:layout_width="399dp"
-        android:layout_height="701dp"
+        android:layout_width="392dp"
+        android:layout_height="671dp"
+        android:layout_marginTop="@dimen/dp_20"
         android:paddingTop="@dimen/dp_10"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
