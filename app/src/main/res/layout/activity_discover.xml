@@ -148,6 +148,7 @@
             android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
+
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="@dimen/dp_10"
@@ -208,17 +209,33 @@
                                 android:padding="@dimen/dp_10"
                                 android:text="LSR'22"
                                 android:textColor="@color/appBlue" />
+
                         </LinearLayout>
 
-                        <Button
-                            android:id="@+id/button4"
-                            android:layout_width="@dimen/dp_25"
-                            android:layout_height="29dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_weight="1"
-                            android:background="@color/darkgrey"
-                            android:text="Free"
-                            android:textColor="@color/white" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/button4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/dp_10"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:background="@color/darkgrey"
+                                android:text="Free"
+                                android:textColor="@color/white" />
+
+                            <ImageView
+                                android:id="@+id/imageView17"
+                                android:layout_width="@dimen/dp_30"
+                                android:layout_height="@dimen/dp_30"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/heart" />
+
+                        </LinearLayout>
 
                     </LinearLayout>
 
@@ -289,15 +306,30 @@
                                 android:textColor="@color/appBlue" />
                         </LinearLayout>
 
-                        <Button
-                            android:id="@+id/buton4"
-                            android:layout_width="@dimen/dp_25"
-                            android:layout_height="29dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_weight="1"
-                            android:background="@color/darkgrey"
-                            android:text="Free"
-                            android:textColor="@color/white" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/button4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/dp_10"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:background="@color/darkgrey"
+                                android:text="Free"
+                                android:textColor="@color/white" />
+
+                            <ImageView
+                                android:id="@+id/imageView17"
+                                android:layout_width="@dimen/dp_30"
+                                android:layout_height="@dimen/dp_30"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/heart" />
+
+                        </LinearLayout>
 
                     </LinearLayout>
 
@@ -368,15 +400,30 @@
                                 android:textColor="@color/appBlue" />
                         </LinearLayout>
 
-                        <Button
-                            android:id="@+id/buttn4"
-                            android:layout_width="@dimen/dp_25"
-                            android:layout_height="29dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_weight="1"
-                            android:background="@color/darkgrey"
-                            android:text="Free"
-                            android:textColor="@color/white" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/button4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/dp_10"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:background="@color/darkgrey"
+                                android:text="Free"
+                                android:textColor="@color/white" />
+
+                            <ImageView
+                                android:id="@+id/imageView17"
+                                android:layout_width="@dimen/dp_30"
+                                android:layout_height="@dimen/dp_30"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/heart" />
+
+                        </LinearLayout>
 
                     </LinearLayout>
 

@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CoffeeMeetsBagel">
-        <activity android:name=".Shop"></activity>
+        <activity android:name=".ProfilePage"></activity>
+        <activity android:name=".Shop" />
         <activity android:name=".MyProfile" />
         <activity android:name=".Dashboard" />
         <activity android:name=".SignInForRewards" />
